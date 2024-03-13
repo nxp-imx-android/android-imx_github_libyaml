@@ -1,0 +1,29 @@
+cc_library_shared {
+    name: "libyaml",
+    proprietary: true,
+
+    srcs: [
+        "src/api.c",
+        "src/reader.c",
+        "src/scanner.c",
+        "src/parser.c",
+        "src/loader.c",
+        "src/writer.c",
+        "src/emitter.c",
+        "src/dumper.c"
+    ],
+
+    cflags: [
+        "-Wextra",
+        "-Wall",
+        "-DYAML_VERSION_MAJOR=0",
+        "-DYAML_VERSION_MINOR=2",
+        "-DYAML_VERSION_PATCH=5",
+        "-DYAML_VERSION_STRING=\"0.2.5\"",
+    ],
+
+    local_include_dirs: [
+        ".",
+        "include",
+    ],
+}
