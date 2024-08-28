@@ -1,0 +1,6 @@
+Package:                   libyaml
+Outgoing License:          MIT
+License File:              License
+Release Location:          https://github.com/nxp-imx-android/android-imx_github_libyaml
+Origin:                    NXP (MIT)
+                           LibYAML homepage (MIT) - https://github.com/yaml/libyaml
